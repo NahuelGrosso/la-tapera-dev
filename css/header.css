@@ -1,0 +1,159 @@
+/* ==========================================
+   LA TAPERA DEV
+   Archivo: header.css
+   Descripción:
+   Header y navegación principal.
+========================================== */
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+header {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: var(--header-height);
+
+    display: flex;
+
+    align-items: center;
+
+    z-index: 1000;
+
+    background: rgba(23, 23, 23, 0.15);
+
+    transition: 
+    background .35s ease,
+        backdrop-filter .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+        /*var(--transition); */
+
+}
+
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+nav {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    height: var(--header-height);
+
+}
+
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: var(--space-2);
+
+    font-size: 1.2rem;
+
+    font-weight: var(--font-semibold);
+
+}
+
+/* ==========================================
+   IMAGEN
+========================================== */
+
+.logo img {
+
+    width: 82px;
+
+    height: auto;
+
+}
+
+
+/* ==========================================
+   MENÚ
+========================================== */
+
+nav ul {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: var(--space-4);
+
+}
+
+nav ul li {}
+
+nav ul li a {
+
+    position: relative;
+
+    font-weight: var(--font-medium);
+
+    transition: var(--transition);
+
+}
+
+nav ul li a::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -6px;
+
+    width: 0;
+
+    height: 2px;
+
+    background: var(--color-accent);
+
+    transition: var(--transition);
+
+}
+
+nav ul li a:hover::after {
+
+    width: 100%;
+
+}
+
+/* ==========================================
+   HEADER AL HACER SCROLL
+========================================== */
+
+header.scrolled {
+
+    background: rgba(23, 23, 23, 0.85);
+
+    backdrop-filter: blur(12px);
+
+    -webkit-backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid var(--color-border);
+
+    box-shadow: var(--shadow-soft);
+
+}
