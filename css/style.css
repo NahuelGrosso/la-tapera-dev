@@ -45,7 +45,7 @@ body {
 
 .container {
 
-    width: min(var(--container-width), 90%);
+    width: min(var(--container-width), 98%);
 
     margin: auto;
 

@@ -1,0 +1,145 @@
+/* ==========================================
+   HERO
+========================================== */
+
+#hero {
+
+    position: relative;
+
+    height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    background-image: url("../images/HeroLaTaperadev.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    overflow: hidden;
+
+    padding: 0 0 1.5rem 0;
+
+    transition: min-height .15s linear;
+
+
+}
+
+.hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, .35);
+
+}
+
+.hero-content {
+
+    position: relative;
+
+    height: 90vh;
+
+}
+
+.hero-top {
+
+    position: absolute;
+
+    top: 8rem;
+
+    left: 0;
+
+}
+
+.hero-bottom-text {
+
+    position: absolute;
+
+    right: 0;
+
+    bottom: 10rem;
+
+    max-width: 520px;
+
+    text-align: right;
+
+}
+
+.hero-bottom-text h2 {
+
+    font-size: 3rem;
+
+    font-weight: var(--font-light);
+
+    color: var(--color-text-light);
+
+    max-width: 650px;
+
+}
+
+.hero-action {
+
+    position: absolute;
+
+    left: 50%;
+
+    bottom: 0rem;
+
+    margin-bottom: 1.5rem;
+
+    transform: translateX(-50%);
+
+}
+
+.hero-top h1,
+.hero-bottom-text h2 {
+
+    font-size: 3rem;
+
+    font-weight: 300;
+
+    color: var(--color-text-light);
+
+    line-height: 1.15;
+
+}
+
+.hero-button {
+
+    display: inline-flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 1rem 2.5rem;
+
+    border: 2px solid var(--color-text-light);
+
+    border-radius: 999px;
+
+    background: transparent;
+
+    color: var(--color-text-light);
+
+    font-size: 1rem;
+
+    font-weight: var(--font-medium);
+
+    letter-spacing: .02em;
+
+    transition: var(--transition);
+
+}
+
+.hero-button:hover {
+
+    background: var(--color-text-light);
+
+    color: var(--color-header);
+
+}

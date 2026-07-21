@@ -5,98 +5,131 @@
 
 :root {
 
-    /* ======================================
+   /* ======================================
        COLORES
     ====================================== */
 
-    --color-background: #171717;
-    --color-background-alt: #222222;
+   /* Fondo principal de la web */
+   --color-background: #F5F1EA;
 
-    --color-primary: #4F6F64;
-    --color-primary-light: #7F9B90;
+   /* Fondo alternativo para secciones */
+   --color-background-alt: #ECE6DD;
 
-    --color-accent: #B88C5A;
+   /* Fondo del Header */
+   --color-header: #171717;
 
-    --color-text: #F3EEE7;
-    --color-text-secondary: #BEB6A9;
+   /* Superficies (cards, formularios, etc.) */
+   --color-surface: #FFFFFF;
 
-    --color-border: rgba(255, 255, 255, .08);
+   /* Color principal de la marca */
+   --color-primary: #4F6F64;
+   --color-primary-light: #7F9B90;
 
-    --color-white: #FFFFFF;
-    --color-black: #000000;
+   /* Color de acento */
+   --color-accent: #B88C5A;
 
-    --color-success: #4CAF50;
-    --color-error: #D9534F;
+   /* ======================================
+       TEXTO
+    ====================================== */
+
+   /* Texto sobre fondos claros */
+   --color-text: #2E2E2E;
+
+   /* Texto secundario */
+   --color-text-secondary: #6E6A64;
+
+   /* Texto sobre fondos oscuros */
+   --color-text-light: #F3EEE7;
+
+   /* ======================================
+       BORDES Y DIVISORES
+    ====================================== */
+
+   /* Bordes de cards y elementos */
+   --color-border: rgba(0, 0, 0, .08);
+
+   /* Líneas divisorias suaves */
+   --color-divider: rgba(0, 0, 0, .05);
+
+   /* ======================================
+       COLORES AUXILIARES
+    ====================================== */
+
+   --color-white: #FFFFFF;
+   --color-black: #000000;
+
+   --color-success: #4CAF50;
+   --color-error: #D9534F;
 
 
-    /* ======================================
+   /* ======================================
        TIPOGRAFÍA
     ====================================== */
 
-    --font-family: "Manrope", sans-serif;
+   --font-family: "Manrope", sans-serif;
 
-    --font-light: 300;
-    --font-regular: 400;
-    --font-medium: 500;
-    --font-semibold: 600;
-    --font-bold: 700;
+   --font-light: 300;
+   --font-regular: 400;
+   --font-medium: 500;
+   --font-semibold: 600;
+   --font-bold: 700;
 
 
-    /* ======================================
+   /* ======================================
        TAMAÑOS DE TEXTO
     ====================================== */
 
-    --text-xs: .85rem;
-    --text-sm: 1rem;
-    --text-md: 1.2rem;
-    --text-lg: 2rem;
-    --text-xl: 3rem;
-    --text-hero: 4.5rem;
+   --text-xs: .85rem;
+   --text-sm: 1rem;
+   --text-md: 1.2rem;
+   --text-lg: 2rem;
+   --text-xl: 3rem;
+   --text-hero: 4.5rem;
 
 
-    /* ======================================
+   /* ======================================
        ESPACIADOS
     ====================================== */
 
-    --space-1: .5rem;
-    --space-2: 1rem;
-    --space-3: 1.5rem;
-    --space-4: 2rem;
-    --space-5: 3rem;
-    --space-6: 5rem;
-    --space-7: 7rem;
-    --space-8: 10rem;
+   --space-1: .5rem;
+   --space-2: 1rem;
+   --space-3: 1.5rem;
+   --space-4: 2rem;
+   --space-5: 3rem;
+   --space-6: 5rem;
+   --space-7: 7rem;
+   --space-8: 10rem;
 
 
-    /* ======================================
+   /* ======================================
        BORDES
     ====================================== */
 
-    --radius-small: 12px;
-    --radius-medium: 18px;
-    --radius-large: 24px;
+   --radius-small: 12px;
+   --radius-medium: 18px;
+   --radius-large: 24px;
 
 
-    /* ======================================
+   /* ======================================
        SOMBRAS
     ====================================== */
 
-    --shadow-soft: 0 10px 30px rgba(0, 0, 0, .18);
+   --shadow-soft: 0 8px 24px rgba(0, 0, 0, .08);
 
 
-    /* ======================================
+   /* ======================================
        TRANSICIONES
     ====================================== */
 
-    --transition: all .3s ease;
+   --transition: all .3s ease;
 
 
-    /* ======================================
+   /* ======================================
        LAYOUT
     ====================================== */
 
-    --container-width: 1200px;
+   --container-width: 1200px;
 
-    --header-height: 80px;
+   --header-height: 80px;
 
 }

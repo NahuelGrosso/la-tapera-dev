@@ -28,14 +28,9 @@ header {
 
     z-index: 1000;
 
-    background: rgba(23, 23, 23, 0.15);
+    background: var(--color-header);
 
-    transition: 
-    background .35s ease,
-        backdrop-filter .35s ease,
-        border-color .35s ease,
-        box-shadow .35s ease;
-        /*var(--transition); */
+    transition: var(--transition);
 
 }
 
@@ -73,6 +68,8 @@ nav {
 
     font-weight: var(--font-semibold);
 
+    color: var(--color-text-light);
+
 }
 
 /* ==========================================
@@ -84,6 +81,8 @@ nav {
     width: 82px;
 
     height: auto;
+
+    border-radius: 50%;
 
 }
 
@@ -111,6 +110,8 @@ nav ul li a {
     font-weight: var(--font-medium);
 
     transition: var(--transition);
+
+    color: var(--color-text-light);
 
 }
 
@@ -140,20 +141,3 @@ nav ul li a:hover::after {
 
 }
 
-/* ==========================================
-   HEADER AL HACER SCROLL
-========================================== */
-
-header.scrolled {
-
-    background: rgba(23, 23, 23, 0.85);
-
-    backdrop-filter: blur(12px);
-
-    -webkit-backdrop-filter: blur(12px);
-
-    border-bottom: 1px solid var(--color-border);
-
-    box-shadow: var(--shadow-soft);
-
-}
