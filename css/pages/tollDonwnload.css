@@ -1,0 +1,151 @@
+/* ==========================================
+   TOOL DOWNLOAD
+========================================== */
+
+#toolDownload {
+
+    padding: 1rem 0 1rem;
+
+}
+
+#toolDownload .container {
+
+    width: 90%;
+
+}
+
+.download-card {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 1.2rem;
+
+    padding: 1rem;
+
+    background: var(--color-header);
+
+    border-radius: var(--radius-large);
+
+}
+
+.download-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 1rem;
+
+}
+
+.download-icon {
+
+    width: 4rem;
+
+    height: 4rem;
+
+    object-fit: contain;
+
+}
+
+.download-title {
+
+    color: var(--color-text-light);
+
+    font-size: 2rem;
+
+    font-weight: var(--font-semibold);
+
+}
+
+.download-title {
+
+    font-size: 2rem;
+
+    font-weight: var(--font-light);
+
+    color: var(--color-text-light);
+
+}
+
+.download-text {
+
+    color: var(--color-text-light);
+
+    text-align: center;
+
+}
+
+
+.google-play-button {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: .8rem;
+
+    width: 20rem;
+
+    height: 8rem;
+
+    padding: 1.5rem;
+
+    border: 2px solid var(--color-text-light);
+
+    border-radius: 999px;
+
+    color: var(--color-text-light);
+
+    transition: var(--transition);
+
+}
+
+.google-play-button img {
+
+    width: 48px;
+
+    height: auto;
+
+}
+
+.google-play-button span {
+
+    color: var(--color-text-light);
+
+    font-size: 1.1rem;
+
+    font-weight: var(--font-semibold);
+
+}
+
+.google-play-button:hover {
+
+    background: var(--color-text-light);
+
+    color: var(--color-header);
+
+
+}
+
+.google-play-button:hover span {
+
+    color: var(--color-header);
+
+}
+
+.download-note {
+
+    color: var(--color-text-secondary);
+
+    text-align: center;
+
+}

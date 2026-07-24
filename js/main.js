@@ -37,3 +37,4 @@ function heroCollapse() {
     hero.style.height = `${currentHeight}vh`;
 
 }
+

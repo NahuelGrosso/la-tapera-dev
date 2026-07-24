@@ -1,0 +1,246 @@
+/* ==========================================
+   NUESTRA MIRADA
+========================================== */
+
+#nuestraMirada {
+
+    padding: 10rem 0;
+
+    background: var(--color-background);
+
+}
+
+
+/* ==========================================
+   CONTENEDOR
+========================================== */
+
+#nuestraMirada .container {
+
+    width: 90%;
+
+    max-width: 70rem;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+}
+
+/* ==========================================
+   CONTENIDO
+========================================== */
+
+.mirada-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4rem;
+
+}
+
+
+
+/* ==========================================
+   PREGUNTA
+========================================== */
+
+.mirada-question {
+
+    font-family: "Nunito", sans-serif;
+
+    font-size: 3rem;
+
+    font-weight: 300;
+
+    line-height: 1.4;
+
+    color: var(--color-text);
+
+}
+
+/* ==========================================
+   RESPUESTA
+========================================== */
+
+.mirada-answer {
+
+    font-family: "Nunito", sans-serif;
+
+    font-size: 2rem;
+
+    font-weight: 300;
+
+    line-height: 1.6;
+
+    color: var(--color-text);
+
+}
+
+/* ==========================================
+   CIERRE
+========================================== */
+
+.mirada-final {
+
+    font-family: "Nunito", sans-serif;
+
+    font-size: 2.4rem;
+
+    font-weight: 700;
+
+    color: var(--color-accent);
+
+    color: var(--color-primary);
+
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer {
+
+    background: var(--color-header);
+
+    padding-top: 4rem;
+
+}
+
+/* ==========================================
+   CONTENEDOR
+========================================== */
+
+.footer-container {
+
+    width: 90%;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 4rem;
+
+    padding-bottom: 3rem;
+
+}
+
+/* ==========================================
+   COLUMNA IZQUIERDA
+========================================== */
+
+.footer-brand {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 1rem;
+
+}
+
+.footer-logo {
+
+    width: 20rem;
+
+    height: auto;
+
+    border-radius: 50%;
+
+}
+
+.footer-title {
+
+    color: var(--color-text-light);
+
+    font-size: 2rem;
+
+    font-weight: var(--font-light);
+
+}
+
+.footer-description {
+
+    color: var(--color-text-secondary);
+
+    font-size: 1rem;
+
+    line-height: 1.8;
+
+}
+
+/* ==========================================
+   COLUMNA DERECHA
+========================================== */
+
+.footer-links {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 1rem;
+
+    align-items: flex-start;
+
+}
+
+.footer-links a {
+
+    color: var(--color-text-light);
+
+    text-decoration: none;
+
+    transition: var(--transition);
+
+    padding: 1rem;
+
+    font-size: var(--text-md);
+
+
+}
+
+.footer-links a:hover {
+
+    color: var(--color-accent);
+
+}
+
+.ico-links {
+    display: inline-flex;
+    align-items: center;
+}
+
+/* ==========================================
+   COPYRIGHT
+========================================== */
+
+.footer-copy {
+
+    border-top: 1px solid rgba(255, 255, 255, .08);
+
+    padding: 1.5rem 0;
+
+    text-align: center;
+
+}
+
+.footer-copy p {
+
+    color: var(--color-text-secondary);
+
+    font-size: .95rem;
+
+}

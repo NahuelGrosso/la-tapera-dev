@@ -1,0 +1,10 @@
+
+@media (max-width:900px) {
+
+    .herramientas-secundarias {
+
+        flex-direction: column;
+
+    }
+
+}

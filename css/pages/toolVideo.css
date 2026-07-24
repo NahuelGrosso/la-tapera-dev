@@ -1,0 +1,117 @@
+/* ==========================================
+   TOOL VIDEO
+========================================== */
+
+#toolVideo{
+
+padding: 2rem 0 2rem;
+}
+
+#toolVideo .container{
+
+    width:90%;
+
+}
+
+.video-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:2rem;
+
+    padding:3rem;
+
+    background:var(--color-header);
+
+    border-radius:var(--radius-large);
+
+}
+
+.video-title{
+
+    font-size:2rem;
+
+    font-weight:var(--font-light);
+
+    color:var(--color-text-light);
+
+}
+
+.video-container{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.video-placeholder{
+
+    width:320px;
+
+    aspect-ratio:9/16;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border:2px dashed rgba(255,255,255,.25);
+
+    border-radius:1rem;
+
+    color:var(--color-text-light);
+
+    text-align:center;
+
+}
+
+.video-description{
+
+    max-width:700px;
+
+    text-align:center;
+
+    line-height:1.9;
+
+    color:var(--color-text-light);
+
+}
+
+.video-button{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:1rem 2.5rem;
+
+    border:2px solid var(--color-text-light);
+
+    border-radius:999px;
+
+    color:var(--color-text-light);
+
+    transition:var(--transition);
+
+}
+
+.video-button:hover{
+
+    background:var(--color-text-light);
+
+    color:var(--color-header);
+
+}
+
+.ico-links-video {
+    display: inline-flex;
+    align-items: center;
+}

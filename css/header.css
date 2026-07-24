@@ -78,7 +78,7 @@ nav {
 
 .logo img {
 
-    width: 82px;
+    width: 70px;
 
     height: auto;
 
@@ -141,3 +141,103 @@ nav ul li a:hover::after {
 
 }
 
+
+
+
+/*---DESPLEGABLE---*/
+.contact-dropdown {
+
+    position: absolute;
+
+    top: calc(100% + 1rem);
+
+    right: 0;
+
+    display: none;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 1rem;
+
+    min-width: 280px;
+
+    padding: 1.5rem;
+
+    background: var(--color-header);
+
+    border-radius: var(--radius-medium);
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .25);
+
+    z-index: 1000;
+
+}
+
+.contact-dropdown.active {
+
+    display: flex;
+
+}
+
+.contact-email {
+
+    color: var(--color-text-light);
+
+    font-size: .95rem;
+
+    text-align: center;
+
+}
+
+.contact-dropdown.active {
+
+    display: flex;
+
+} 
+
+.nav-contact {
+
+    position: relative;
+
+}
+
+.nav-button {
+
+    width: 90%;
+
+    display: inline-flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 1rem 2.5rem;
+
+    border: 2px solid var(--color-text-light);
+
+    border-radius: 999px;
+
+    background: transparent;
+
+    color: var(--color-text-light);
+
+    font-size: 1rem;
+
+    font-weight: var(--font-medium);
+
+    letter-spacing: .02em;
+
+    transition: var(--transition);
+
+
+}
+
+.nav-button:hover {
+
+    background: var(--color-text-light);
+
+    color: var(--color-header);
+
+}

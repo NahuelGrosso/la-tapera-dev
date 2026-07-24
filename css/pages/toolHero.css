@@ -1,0 +1,148 @@
+/* ==========================================
+   TOOL HERO
+========================================== */
+
+#toolHero {
+
+padding: 8rem 0 2rem;
+}
+
+
+/* ==========================================
+   CONTENEDOR
+========================================== */
+
+#toolHero .container {
+
+    width: 90%;
+
+}
+
+
+/* ==========================================
+   CARD
+========================================== */
+
+.toolHero-top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 5rem;
+
+    padding: 3rem;
+
+    background: var(--color-header);
+
+    border-radius: var(--radius-large);
+
+}
+
+
+/* ==========================================
+   INFORMACIÓN
+========================================== */
+
+.toolHero-title {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 2rem;
+
+    flex: 1;
+
+}
+
+.toolHero-title h1 {
+
+    font-size: 3rem;
+
+    font-weight: var(--font-light);
+
+    color: var(--color-text-light);
+
+}
+
+.toolHero-description {
+
+    max-width: 42rem;
+
+    font-size: 1.2rem;
+
+    line-height: 1.9;
+
+    color: var(--color-text-light);
+
+}
+
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.toolHero-logo {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+.toolHero-logo img {
+
+    width: 12rem;
+
+    height: 12rem;
+
+    object-fit: contain;
+
+    border-radius: 17%;
+
+
+}
+
+
+/* ==========================================
+   BOTÓN
+========================================== */
+
+.toolHero-button {
+
+    display: inline-flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    width: fit-content;
+
+    padding: 1rem 2.5rem;
+
+    border: 2px solid var(--color-text-light);
+
+    border-radius: 999px;
+
+    background: transparent;
+
+    color: var(--color-text-light);
+
+    font-weight: var(--font-medium);
+
+    transition: var(--transition);
+
+}
+
+.toolHero-button:hover {
+
+    background: var(--color-text-light);
+
+    color: var(--color-header);
+
+}

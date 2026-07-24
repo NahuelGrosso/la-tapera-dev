@@ -1,0 +1,104 @@
+/* ==========================================
+   TOOL DESCRIPTION
+========================================== */
+
+#toolDescription {
+
+padding: 1rem 0 1rem;
+}
+
+
+/* ==========================================
+   CONTENEDOR
+========================================== */
+
+#toolDescription .container {
+
+    width: 90%;
+
+}
+
+
+/* ==========================================
+   CARD
+========================================== */
+
+#toolDescription .container {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3rem;
+
+    padding: 3rem;
+
+    background: var(--color-header);
+
+    border-radius: var(--radius-large);
+
+}
+
+
+/* ==========================================
+   TÍTULO
+========================================== */
+
+.description-title {
+
+    font-size: 2.2rem;
+
+    font-weight: var(--font-light);
+
+    line-height: 1.4;
+
+    color: var(--color-text-light);
+
+    text-align: center;
+
+}
+
+
+/* ==========================================
+   TEXTO
+========================================== */
+
+.description-text {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 1.8rem;
+
+}
+
+.description-text p {
+
+    font-size: 1.15rem;
+
+    line-height: 2;
+
+    color: var(--color-text-light);
+
+    text-align: justify;
+
+}
+
+.description-text p:last-child {
+
+    margin-top: 1rem;
+
+    padding-top: 2rem;
+
+    border-top: 1px solid rgba(255, 255, 255, .12);
+
+    font-size: 1.25rem;
+
+    font-weight: var(--font-medium);
+
+    color: var(--color-accent);
+
+    text-align: center;
+
+}
