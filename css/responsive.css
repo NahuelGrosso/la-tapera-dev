@@ -1,5 +1,51 @@
+/* ==========================================
+   DESKTOP LARGE (1024+)
+========================================== */
 
-@media (max-width:900px) {
+
+/* ==========================================
+   TABLET (768-1023)
+========================================== */
+
+@media (max-width:1023px) {
+
+    nav {
+
+        gap: 2rem;
+
+    }
+
+    nav ul {
+
+        gap: 2rem;
+
+    }
+
+    .logo img {
+
+        width: 68px;
+
+    }
+
+    .logo-title {
+
+        font-size: 1.15rem;
+
+    }
+
+    nav ul li a {
+
+        font-size: .95rem;
+
+    }
+
+}
+
+
+/* ==========================================
+   CARDS DISPOSICION
+========================================== */
+@media (max-width:969px) {
 
     .herramientas-secundarias {
 
@@ -10,10 +56,96 @@
 }
 
 /* ==========================================
+   MOBILE (<768)
+========================================== */
+
+@media (max-width:767px) {
+    /*============
+        HERO
+    ============*/
+
+
+    .hero-content {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        height: 100%;
+
+        text-align: center;
+
+        gap: 2rem;
+
+    }
+
+        .hero-top {
+    
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+    
+        }
+                .hero-bottom-text {
+        
+                    left: 50%;
+                    right: auto;
+                    transform: translateX(-50%);
+                    text-align: center;
+        
+                }
+
+    
+
+
+
+
+  /*============
+        HERO FIN
+    ============*/
+
+
+
+    nav {
+
+        justify-content: space-between;
+
+    }
+
+    nav ul {
+
+        display: none;
+
+    }
+
+    .logo img {
+
+        width: 60px;
+
+    }
+
+    .logo-title {
+
+        font-size: 1rem;
+
+    }
+
+    .story-chapter {
+        flex-direction: column;
+    }
+
+    .story-chapter:nth-child(even) {
+        flex-direction: column;
+    }
+}
+
+
+/* ==========================================
    RESPONSIVE FOOTER
 ========================================== */
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
 
     .footer-container {
         flex-direction: column;
