@@ -241,3 +241,43 @@ nav ul li a:hover::after {
     color: var(--color-header);
 
 }
+
+/* ==========================================
+   MENÚ HAMBURGUESA
+========================================== */
+
+.menu-toggle {
+
+    display: none;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 6px;
+
+    background: none;
+
+    border: none;
+
+    cursor: pointer;
+
+    padding: .5rem;
+
+}
+
+.menu-toggle span {
+
+    width: 28px;
+
+    height: 3px;
+
+    background: var(--color-text-light);
+
+    border-radius: 10px;
+
+    transition: var(--transition);
+
+}
