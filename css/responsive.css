@@ -80,28 +80,29 @@
 
     }
 
-        .hero-top {
-    
-            left: 50%;
-            transform: translateX(-50%);
-            text-align: center;
-    
-        }
-                .hero-bottom-text {
-        
-                    left: 50%;
-                    right: auto;
-                    transform: translateX(-50%);
-                    text-align: center;
-        
-                }
+    .hero-top {
 
-    
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
 
+    }
+
+    .hero-bottom-text {
+
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        text-align: center;
+
+    }
 
 
 
-  /*============
+
+
+
+    /*============
         HERO FIN
     ============*/
 
@@ -133,10 +134,30 @@
 
     .story-chapter {
         flex-direction: column;
+        justify-content: flex-start;
+        gap: 1.5rem;
     }
 
     .story-chapter:nth-child(even) {
         flex-direction: column;
+    }
+
+    .story-content {
+        width: 100%;
+    }
+
+    .story-title {
+        font-size: 2.0rem;
+    }
+
+    .story-text {
+        font-size: 1rem;
+        line-height: 1.5;
+        
+    }
+
+    .story-image {
+        width: 100%;
     }
 }
 

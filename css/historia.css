@@ -54,7 +54,7 @@
 
     overflow: hidden;
 
-margin-block: .2rem;
+    margin-block: .2rem;
 
 }
 
@@ -116,6 +116,8 @@ margin-block: .2rem;
     line-height: 1.9;
 
     color: var(--color-text-light);
+
+    text-align: justify;
 
 }
 
