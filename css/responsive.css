@@ -8,3 +8,27 @@
     }
 
 }
+
+/* ==========================================
+   RESPONSIVE FOOTER
+========================================== */
+
+@media (max-width: 700px) {
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .footer-links {
+        width: 100%;
+        align-items: center;
+    }
+
+    .ico-links {
+        justify-content: center;
+    }
+
+}

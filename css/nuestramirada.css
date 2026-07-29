@@ -149,6 +149,8 @@ footer {
 
     gap: 1rem;
 
+    align-items: center;
+
 }
 
 .footer-logo {
