@@ -1,40 +1,40 @@
-//* ==========================================
-/*CONTACTO - DESPLEGABLE*/
-//*========================================== */
+/* ==========================================
+   HEADER
+   Funcionalidades del encabezado
+========================================== */
+
+/* ==========================================
+   ELEMENTOS
+========================================== */
 
 const contactButton = document.querySelector(".contact-button");
 const dropdown = document.querySelector(".contact-dropdown");
 const copyButton = document.querySelector(".copy-email");
 
-console.log(contactButton);
-console.log(dropdown);
-console.log(copyButton);
-
-contactButton.addEventListener("click", function (event) {
-
-    event.preventDefault();
-
-    console.log("CLICK");
-
-
-    dropdown.classList.toggle("active");
-
-});
-
-copyButton.addEventListener("click", function () {
-
-    navigator.clipboard.writeText("lataperadev@gmail.com");
-
-});
-
-/* ==========================================
-   MENÚ HAMBURGUESA
-========================================== */
-
 const menuToggle = document.querySelector(".menu-toggle");
 const navMenu = document.querySelector(".nav-menu");
 
-/* Función para cerrar el menú */
+/* ==========================================
+   FUNCIONES
+========================================== */
+
+/* Cerrar desplegable de contacto */
+
+function closeContactDropdown() {
+
+    dropdown.classList.remove("active");
+
+}
+
+/* Abrir / cerrar desplegable de contacto */
+
+function toggleContactDropdown() {
+
+    dropdown.classList.toggle("active");
+
+}
+
+/* Cerrar menú hamburguesa */
 
 function closeMenu() {
 
@@ -43,45 +43,28 @@ function closeMenu() {
 
 }
 
-/* Abrir / cerrar menú */
+/* Cerrar completamente el header */
 
-menuToggle.addEventListener("click", () => {
+function closeHeader() {
 
-    menuToggle.classList.toggle("active");
-    navMenu.classList.toggle("active");
+    closeMenu();
 
-});
+    closeContactDropdown();
 
-/* Cerrar al hacer click fuera */
+}
 
-document.addEventListener("click", (event) => {
 
-    const clickDentroDelMenu = navMenu.contains(event.target);
-    const clickEnBoton = menuToggle.contains(event.target);
+/* ==========================================
+   CONTACTO
+========================================== */
 
-    if (!clickDentroDelMenu && !clickEnBoton) {
+contactButton.addEventListener("click", function (event) {
 
-        closeMenu();
+    event.preventDefault();
 
-    }
+    event.stopPropagation();
 
-});
-
-/* Cerrar al navegar */
-
-const menuLinks = document.querySelectorAll(".nav-menu a");
-
-menuLinks.forEach(link => {
-
-    /* No cerrar si es el botón Contacto */
-
-    if (link.classList.contains("contact-button")) return;
-
-    link.addEventListener("click", () => {
-
-        closeMenu();
-
-    });
+    toggleContactDropdown();
 
 });
 
@@ -89,6 +72,70 @@ copyButton.addEventListener("click", function () {
 
     navigator.clipboard.writeText("lataperadev@gmail.com");
 
-    closeMenu();
+    closeHeader();
+
+});
+
+
+/* ==========================================
+   MENÚ HAMBURGUESA
+========================================== */
+
+menuToggle.addEventListener("click", function (event) {
+
+    event.stopPropagation();
+
+    menuToggle.classList.toggle("active");
+
+    navMenu.classList.toggle("active");
+
+});
+
+
+/* ==========================================
+   NAVEGACIÓN
+========================================== */
+
+const menuLinks = document.querySelectorAll(".nav-menu a");
+
+menuLinks.forEach(link => {
+
+    /* Contacto no navega */
+
+    if (link.classList.contains("contact-button")) return;
+
+    link.addEventListener("click", () => {
+
+        closeHeader();
+
+    });
+
+});
+
+
+/* ==========================================
+   CLICK FUERA DEL HEADER
+========================================== */
+
+document.addEventListener("click", function (event) {
+
+    const clickMenu = navMenu.contains(event.target);
+
+    const clickHamburguesa = menuToggle.contains(event.target);
+
+    const clickDropdown = dropdown.contains(event.target);
+
+    const clickContacto = contactButton.contains(event.target);
+
+    if (
+        !clickMenu &&
+        !clickHamburguesa &&
+        !clickDropdown &&
+        !clickContacto
+    ) {
+
+        closeHeader();
+
+    }
 
 });
