@@ -198,37 +198,40 @@
 
     }
 
-    .nav-menu {
+   .nav-menu {
 
-        display: none;
+       display: flex;
+       flex-direction: column;
 
-    }
+       position: absolute;
+       top: 100%;
+       left: 0;
 
-    .nav-menu.active {
+       width: 100%;
 
-        display: flex;
+       background: var(--color-header);
 
-        flex-direction: column;
+       opacity: 0;
 
-        align-items: center;
+       transform: translateY(-15px);
 
-        gap: 2rem;
+       pointer-events: none;
 
-        position: absolute;
+       transition:
+           opacity .35s ease,
+           transform .35s ease;
 
-        top: 100%;
+   }
 
-        left: 0;
-
-        width: 100%;
-
-        padding: 2rem;
-
-        background: var(--color-header);
-
-        box-shadow: 0 10px 25px rgba(0, 0, 0, .2);
-
-    }
+        .nav-menu.active {
+    
+            opacity: 1;
+    
+            transform: translateY(0);
+    
+            pointer-events: auto;
+    
+        }
 
         /* ==========================================
        ANIMACIÓN MENÚ HAMBURGUESA
