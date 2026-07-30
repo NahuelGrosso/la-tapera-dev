@@ -60,6 +60,48 @@
 ========================================== */
 
 @media (max-width:767px) {
+
+    /*============
+        HERO DE LAS PAGINAS DE CADA HERRAMIENTA
+    ============*/
+    .toolHero-top {
+
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+
+        gap: 2rem;
+
+    }
+
+    .toolHero-logo {
+
+        order: -1;
+
+    }
+
+    .toolHero-logo img {
+
+        width: 130px;
+        height: auto;
+
+    }
+
+    .toolHero {
+
+        padding: 2rem 1.5rem;
+
+    }
+
+    .toolHero-title {
+
+        align-items: center;
+
+    }
+
+
     /*============
         HERO
     ============*/
@@ -153,7 +195,7 @@
     .story-text {
         font-size: 1rem;
         line-height: 1.5;
-        
+
     }
 
     .story-image {
@@ -198,61 +240,61 @@
 
     }
 
-   .nav-menu {
+    .nav-menu {
 
-       display: flex;
-       flex-direction: column;
+        display: flex;
+        flex-direction: column;
 
-       position: absolute;
-       top: 100%;
-       left: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
 
-       width: 100%;
+        width: 100%;
 
-       background: var(--color-header);
+        background: var(--color-header);
 
-       opacity: 0;
+        opacity: 0;
 
-       transform: translateY(-15px);
+        transform: translateY(-15px);
 
-       pointer-events: none;
+        pointer-events: none;
 
-       transition:
-           opacity .35s ease,
-           transform .35s ease;
+        transition:
+            opacity .35s ease,
+            transform .35s ease;
 
-   }
+    }
 
-        .nav-menu.active {
-    
-            opacity: 1;
-    
-            transform: translateY(0);
-    
-            pointer-events: auto;
-    
-        }
+    .nav-menu.active {
 
-        /* ==========================================
+        opacity: 1;
+
+        transform: translateY(0);
+
+        pointer-events: auto;
+
+    }
+
+    /* ==========================================
        ANIMACIÓN MENÚ HAMBURGUESA
     ========================================== */
-    
-        .menu-toggle.active span:nth-child(1) {
-    
-            transform: translateY(9px) rotate(45deg);
-    
-        }
-    
-        .menu-toggle.active span:nth-child(2) {
-    
-            opacity: 0;
-    
-        }
-    
-        .menu-toggle.active span:nth-child(3) {
-    
-            transform: translateY(-9px) rotate(-45deg);
-    
-        }
+
+    .menu-toggle.active span:nth-child(1) {
+
+        transform: translateY(9px) rotate(45deg);
+
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+
+        opacity: 0;
+
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+
+        transform: translateY(-9px) rotate(-45deg);
+
+    }
 
 }
