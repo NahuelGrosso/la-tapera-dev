@@ -65,6 +65,8 @@
 
     padding: 2.5rem;
 
+    margin-top: 0.75rem;
+
     background: var(--color-header);
 
     border-radius: var(--radius-large);
