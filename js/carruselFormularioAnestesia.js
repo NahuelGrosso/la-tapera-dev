@@ -1,5 +1,5 @@
 /* ==========================================
-   CARRUSEL DESCONGELAPP
+   CARRUSEL FORMULARIO DE ANESTESIA
 ========================================== */
 
 const gallery = [
